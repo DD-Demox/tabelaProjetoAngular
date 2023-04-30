@@ -1,0 +1,19 @@
+<div mat-dialog-content>
+    <form #alunoForm="ngForm" (ngSubmit)="registrarAluno(alunoForm)">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" ngModel>
+      
+        <label for="idade">Idade</label>
+        <input type="text" name="idade" id="idade" ngModel>
+        
+        <label for="peso">Peso</label>
+        <input type="text" name="peso" id="peso" ngModel>
+    
+        <label for="altura">Altura</label>
+        <input type="text" name="altura" id="altura" ngModel>
+        <div mat-dialog-actions>
+            <button mat-raised-button mat-dialog-close type="submit">Cadastrar</button>
+        </div>
+    </form>
+</div>
+
